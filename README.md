@@ -30,6 +30,7 @@
 #### 配套客户端、服务端：
 
 - [Link](https://pan.baidu.com/s/1DVGJkk7oZ2OSQANVMP7g1Q?pwd=wkze)
+- 我强烈地建议您使用Release中的GTQT-core模组替换此包中自带的模组。
 
 如果有服务商愿意提供加速...请直接发送轻量级pr替换。下载页有一点小广告什么的无所谓，下的比百度快就行。  
 Enjoy.
