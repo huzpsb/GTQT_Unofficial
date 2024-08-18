@@ -1,26 +1,6 @@
 package keqing.gtqtcore.loaders.recipes;
 
 import keqing.gtqtcore.loaders.recipes.chain.*;
-import keqing.gtqtcore.loaders.recipes.chain.AcetyleneChain;
-import keqing.gtqtcore.loaders.recipes.chain.AmmoniaChain;
-import keqing.gtqtcore.loaders.recipes.chain.BZChain;
-import keqing.gtqtcore.loaders.recipes.chain.BoronNitrideChain;
-import keqing.gtqtcore.loaders.recipes.chain.BrineChain;
-import keqing.gtqtcore.loaders.recipes.chain.DimethylformamideChain;
-import keqing.gtqtcore.loaders.recipes.chain.EDTAChain;
-import keqing.gtqtcore.loaders.recipes.chain.EtchingMaterialsChain;
-import keqing.gtqtcore.loaders.recipes.chain.EthyleneGlycolChain;
-import keqing.gtqtcore.loaders.recipes.chain.FantasyMaterials;
-import keqing.gtqtcore.loaders.recipes.chain.FullereneChain;
-import keqing.gtqtcore.loaders.recipes.chain.GalliumNitrideChain;
-import keqing.gtqtcore.loaders.recipes.chain.GrapheneChain;
-import keqing.gtqtcore.loaders.recipes.chain.HydrogenPeroxideChain;
-import keqing.gtqtcore.loaders.recipes.chain.IsotopesChain;
-import keqing.gtqtcore.loaders.recipes.chain.KaptonChain;
-import keqing.gtqtcore.loaders.recipes.chain.KevlarChain;
-import keqing.gtqtcore.loaders.recipes.chain.MagneticsChain;
-import keqing.gtqtcore.loaders.recipes.chain.MethylamineChain;
-import keqing.gtqtcore.loaders.recipes.chain.NanotubesChain;
 import keqing.gtqtcore.loaders.recipes.circuits.*;
 import keqing.gtqtcore.loaders.recipes.component.GCYSComponentRecipes;
 import keqing.gtqtcore.loaders.recipes.handlers.*;
@@ -29,9 +9,12 @@ public class GTQTRecipesManager {
     private GTQTRecipesManager() {
 
     }
+
     public static void load() {
     }
+
     public static void init() {
+        Unofficial.init();
         ZirconChain.init();
         DeltamethrinChain.init();
         RubbersChain.init();
@@ -134,6 +117,7 @@ public class GTQTRecipesManager {
         ChiselMachineRecipeLoader.init();
         PreciseAssemblerChain.init();
     }
+
     private static void initOreProcessing() {
         PlatinumGroupProcessing.init();
         RareEarthProcessing.init();
@@ -145,6 +129,7 @@ public class GTQTRecipesManager {
         TaraniumProcessing.init();
         RubidiumProcessing.init();
     }
+
     private static void initCircuits() {
         PrimitiveCircuits.init();
         CrystalCircuits.init();

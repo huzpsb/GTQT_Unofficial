@@ -51,8 +51,7 @@ public class TimeBottleBehavior implements IItemBehaviour {
                     if (itemStack.hasTagCompound()) {
                         NBTTagCompound compound = itemStack.getTagCompound();
                         time = compound.getInteger("storedTime");
-                        if(time<maxTime
-                        )time++;
+                        if(time<maxTime)time+=5;
                         compound.setInteger("storedTime", time);
                     } else {
                         NBTTagCompound compound = new NBTTagCompound();
@@ -84,9 +83,9 @@ public class TimeBottleBehavior implements IItemBehaviour {
     }
     public int getRapid(int n)
     {
-        if(n<1200)return n;
-        if(n<4800)return 1200;
-        return 4800;
+        if(n<300)return n;
+        if(n<1200)return 300;
+        return 1200;
     }
 
     public void addEnergy(World world, BlockPos pos,long cache)
