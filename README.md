@@ -9,7 +9,7 @@
 
 #### 许可证说明：
 
-- Git记录为证，本Core mod的fork的分叉点在GPLv3版本，并未使用原作者修改许可证后的推送内容。
+- [Git记录](https://github.com/huzpsb/GTQT_Unofficial/commits/master/)为证，本Core mod的fork的分叉点在GPLv3版本，并未使用原作者修改许可证后的推送内容。
 - [WebArchive](https://archive.is/Zlfgw)为证，内含的客户端也由此旧版本的、GPLv3许可证的版本分叉而来。
 - 因此继承GPLv3。
 
